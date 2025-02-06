@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hero">
+        <div id="logoContainer">
+            <img id="logo" src="images/odin-lined.png">
+            <span id="logoText">ODIN</span>
+        </div>
+    </div>
+    <main>
+        <p class="headerText">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p class="headerText">You <em>know</em> you want to.</p>
+
+        <form method="post" action="/submitSignup">
+            <div id="card">
+                <h3>Let's do this!</h3>
+                <div class="row">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
+                </div>
+                <div class="row">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+                <div class="row">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass">
+                    <label for="confirmPass">Confirm Password</label>
+                    <input type="password" id="confirmPass">
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="small">Already have an account? <a href="login.html">Log in</a></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
