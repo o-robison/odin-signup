@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+#hero {
+    background-image: url("images/leaves.jpg");
+    background-position: center;
+    background-size: cover;
+    width: clamp(290px, 33%, 600px);
+    display: flex;
+    flex-direction: column;
+}
+
+#logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
+    margin-bottom: auto;
+}
+
+#logo {
+    width: 75px;
+    height: auto;
+}
+
+#logoText {
+    font-family: 'norsebold', sans-serif;
+    color: white;
+    font-size: 75px;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution, .attribution>a {
+    color: white;
+}
