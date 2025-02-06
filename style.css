@@ -6,6 +6,12 @@
     font-style: normal;
 }
 
+:root {
+    --primary: #596d48;
+    --primaryHover: #3b4830;
+    --inputBorder: #e5e7eb;
+}
+
 body {
     display: flex;
     height: 100vh;
@@ -17,7 +23,8 @@ body {
     background-image: url("images/leaves.jpg");
     background-position: center;
     background-size: cover;
-    width: clamp(290px, 33%, 600px);
+    min-width: 290px;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
@@ -49,4 +56,84 @@ body {
 
 .attribution, .attribution>a {
     color: white;
+}
+
+main {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerText {
+    font-size: 20px;
+    font-weight: 600;
+    width: 75%;
+    margin-top: 24px;
+}
+
+.justify {
+    margin-left: 24px;
+}
+
+#card {
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 12px 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 40px 0 24px 0;
+}
+
+input {
+    width: 250px;
+    border: 0.5px solid var(--inputBorder);
+    border-radius: 4px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border: 1px solid rgb(5, 5, 102);
+}
+
+label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.btnPrimary {
+    padding: 8px 32px;
+    border-radius: 6px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+    box-shadow: none;
+}
+.btnPrimary:hover {
+    background-color: var(--primaryHover);
+}
+
+.small {
+    font-size: 0.9rem;
+    margin-top: 24px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
 }
